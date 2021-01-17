@@ -1,0 +1,22 @@
+@media screen and (max-width: 918px){
+    .menu_desktop{
+        display: none;
+    }
+
+    .menu_mobile{
+        display: block;
+    }
+
+    .icon{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .icon i{
+        color: #0c7f91;
+        transform: scale(1.5);
+        padding-right: 2%;
+
+    }
+
+}
