@@ -1,0 +1,81 @@
+.fale-conosco{
+    width: 50%;
+}
+
+.form-fale-conosco fieldset,
+.form-trabalhe-conosco fieldset{
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-fale-conosco legend, 
+.form-trabalhe-conosco legend{
+    font-size: 36px;
+    margin-bottom: 32px;
+    text-align: center;
+    color: #0c7f91;
+    font-weight: 400;
+}
+
+.input-block{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-block label{
+    font-size: 20px;
+    font-weight: 400;
+    color: #0c7f91;
+    margin-bottom: 16px;
+}
+
+.input-block input{
+    padding: 12px 12px;
+    line-height: 28px;
+    font-size: 22px;
+    border-radius: 8px;
+    color: #0c7f91;
+    font-weight: 300;
+    border:1px solid #0c7f91;
+}
+
+.input-block input:valid,
+.input-block textarea:valid{
+    border: 1px solid #a1e9c5;
+}
+
+.input-block textarea{
+    height: clamp(120px, 160px, 240px);
+    resize: vertical;
+    padding: 16px;
+    line-height: 28px;
+    font-size: 22px;
+    border-radius: 8px;
+    color: #0c7f91;
+    font-weight: 300;
+    border:1px solid #0c7f91;
+}
+
+.input-block + .input-block{
+    margin-top: 24px;
+}
+
+.btn{
+    padding: 16px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 8px;
+    background: #0c7f91;
+    color: white;
+    font-size: 20px;
+    transition: 600ms;
+    font-weight: 400;
+}
+
+.btn:hover{
+    transition: 600px;
+    background: #0c7f91de;
+}

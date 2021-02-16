@@ -6,10 +6,20 @@
     <meta name="description" content="hospital,são,lucas,maternidade,cuidados,saúde">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+
     <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/form.css">
+    <link rel="stylesheet" href="/public/css/location.css">
     <link rel="stylesheet" href="/public/css/animation.css">
     <link rel="stylesheet" href="/public/css/responsivo.css">
-    <title>Hospital São Lucas</title>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <title>Hospital São Lucas - Localização</title>
 </head>
 <body>
     <section class="topo">
@@ -45,45 +55,47 @@
         </div>
 
     </header>
-    <section class="banner " id="slider">
-        <img  class="selected" src="/public/images/tarja (sao lucas).jpg">
-        <img src="/public/images/tarja (atendimento personalizado).jpg">
-        <img src="/public/images/tarja (covid).jpg">
-        <img src="/public/images/tarja (hemo).jpg">
-        <img src="/public/images/tarja 2 (ortopedia).jpg">
-        <img src="/public/images/tarja (parto humanizado).jpg">
-        
-    </section>
 
-    <main>
-        <!-- conteúdo principal semântico aqui -->
-        <section class="cards_services">
-            <h1>CONTE COM O SÃO LUCAS</h1>
-            <div class="cards">
-                <div class="card">
-                    <h1>Pronto Atendimento 24H</h1>
-                    <div class="card_image">
-                        <img src="/public/images/teste_card.jpeg" alt="">
-                        <div class="card_text"><p>Nossa equipe especializada em emergência disponível 24h</p></div>
-                    </div><!--card_image-->
-                </div><!--card-->
-                <div class="card">
-                    <h1>Centro Obstretrico e Ginecologico</h1>
-                    <div class="card_image">
-                        <img src="/public/images/teste_card.jpeg" alt="">
-                        <div class="card_text"><p>Nossa equipe especializada em emergência disponivel 24h</p></div>
-                    </div><!--card_image-->
-                </div><!--card-->
-                <div class="card">
-                    <h1>Ortopedia e Traumatologia</h1>
-                    <div class="card_image">
-                        <img src="/public/images/teste_card.jpeg" alt="">
-                        <div class="card_text"><p>Nossa equipe especializada em emergência disponivel 24h</p></div>
-                    </div><!--card_image-->
-                </div><!--card-->
-            </div><!--cards-->
+    <main class="location">
+        <div class="center">
+            <section class="visit">
 
-        </section>
+                <div class="fale-conosco">
+                    <form action="" class="form-fale-conosco">
+                        <fieldset>
+                            <legend>Contato</legend>
+                            <div class="input-block">
+                                <label for="name">Digite seu nome*</label>
+                                <input type="text" name="name" id="name" maxlength="40" required>
+                            </div><!--input-block-->
+
+                            <div class="input-block">
+                                <label for="whatsapp">Digite seu celular*</label>
+                                <input type="text" name="whatsapp" id="whatsapp" maxlength="11" required>
+                            </div><!--input-block-->
+
+                            <div class="input-block">
+                                <label for="email">Digite seu e-mail*</label>
+                                <input type="email" name="email" id="email" maxlength="70" required>
+                            </div><!--input-block-->
+
+                            <div class="input-block">
+                                <label for="instructions">Informe sua dúvida* </label>
+                                <textarea id="instructions" name="instructions" required maxlength="450"></textarea>
+                            </div><!--input-block-->
+
+
+                            <div class="input-block">
+                                <button class="btn" type="submit">Enviar</button>
+                            </div><!--input-block-->
+                            
+                        </fieldset>
+                    </form>
+                </div><!--fale-conosco-->
+
+                <div id="mapid"></div>
+            </section><!--visit-->
+        </div><!--center-->
     </main>
 
 
@@ -165,5 +177,6 @@
 
     <script src="https://kit.fontawesome.com/f4dd9ff78b.js" crossorigin="anonymous"></script>
     <script src="/public/js/scripts.js"></script>
+    <script src="/public/js/map.js"></script>
 </body>
 </html>

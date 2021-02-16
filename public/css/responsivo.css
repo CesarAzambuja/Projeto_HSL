@@ -7,6 +7,10 @@
         display: block;
     }
 
+    .menu_mobile ul{
+        display: none;
+    }
+
     .icon{
         display: flex;
         justify-content: flex-end;
@@ -16,7 +20,91 @@
         color: #0c7f91;
         transform: scale(1.5);
         padding-right: 2%;
+    }
+}
 
+@media screen and (max-width: 768px){
+    header .logo{
+        width: 140px;
+        height: 60px;
+        padding: 4px;
+        background-repeat: no-repeat;
     }
 
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content:center;
+    }
+
+    .banner{
+        width: 100%;
+        height: 200px;
+        min-height: 200px;
+        position: relative;
+        
+    }
+    
+    .banner img.selected{
+        width: 100%;
+        height: 100%;
+    }
+    
+    section.visit{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #mapid{
+        width: 100%;
+        height: 650px;
+        padding: 0 2%;
+    }
+
+    .fale-conosco{
+        width: 100%;
+    }
+    
+    .form-fale-conosco fieldset, .form-trabalhe-conosco fieldset{
+        width: 100%;
+        margin-bottom: 52px;
+    }
+
+    .input-block{
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .input-block .hidden{
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 650px){
+    footer .copy{
+        font-size: 10px;
+    }
+
+    footer .copy.dev{
+        font-size: 8px;
+    }
+    
+    .contact-footer{
+        flex-direction: column;
+        padding: 0 2%;
+    }
+
+    .contact-us{
+        margin-bottom: 24px;
+    }
+
+    .social-media i{
+        margin-right: 20px;
+    }
+
+    .general-services{
+        flex-direction: column;
+        padding: 0 2%;
+    }
 }

@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/style.css">
     <link rel="stylesheet" href="/public/css/animation.css">
+    <link rel="stylesheet" href="/public/css/form.css">
+    <link rel="stylesheet" href="/public/css/location.css">
+    <link rel="stylesheet" href="/public/css/trabalhe-conosco.css">
     <link rel="stylesheet" href="/public/css/responsivo.css">
     <title>Hospital São Lucas</title>
 </head>
@@ -45,48 +48,56 @@
         </div>
 
     </header>
-    <section class="banner " id="slider">
-        <img  class="selected" src="/public/images/tarja (sao lucas).jpg">
-        <img src="/public/images/tarja (atendimento personalizado).jpg">
-        <img src="/public/images/tarja (covid).jpg">
-        <img src="/public/images/tarja (hemo).jpg">
-        <img src="/public/images/tarja 2 (ortopedia).jpg">
-        <img src="/public/images/tarja (parto humanizado).jpg">
-        
-    </section>
 
-    <main>
-        <!-- conteúdo principal semântico aqui -->
-        <section class="cards_services">
-            <h1>CONTE COM O SÃO LUCAS</h1>
-            <div class="cards">
-                <div class="card">
-                    <h1>Pronto Atendimento 24H</h1>
-                    <div class="card_image">
-                        <img src="/public/images/teste_card.jpeg" alt="">
-                        <div class="card_text"><p>Nossa equipe especializada em emergência disponível 24h</p></div>
-                    </div><!--card_image-->
-                </div><!--card-->
-                <div class="card">
-                    <h1>Centro Obstretrico e Ginecologico</h1>
-                    <div class="card_image">
-                        <img src="/public/images/teste_card.jpeg" alt="">
-                        <div class="card_text"><p>Nossa equipe especializada em emergência disponivel 24h</p></div>
-                    </div><!--card_image-->
-                </div><!--card-->
-                <div class="card">
-                    <h1>Ortopedia e Traumatologia</h1>
-                    <div class="card_image">
-                        <img src="/public/images/teste_card.jpeg" alt="">
-                        <div class="card_text"><p>Nossa equipe especializada em emergência disponivel 24h</p></div>
-                    </div><!--card_image-->
-                </div><!--card-->
-            </div><!--cards-->
+    <main class="trabalhe-conosco">
+        <div class="center">
+            <section class="visit">
+                <div class="fale-conosco">
+                    <form action="" class="form-trabalhe-conosco">
+                        <fieldset>
+                            <legend>Trabalhe Conosco</legend>
+                            <div class="input-block">
+                                <label for="fullName">Digite seu nome completo*</label>
+                                <input type="text" name="fullName" id="fullName" maxlength="40" required>
+                            </div><!--input-block-->
 
-        </section>
+                            <div class="input-block">
+                                <label for="whatsappOpportunity">Digite seu celular*</label>
+                                <input type="text" name="whatsappOpportunity" id="whatsappOpportunity" maxlength="11" required>
+                            </div><!--input-block-->
+
+                            <div class="input-block">
+                                <label for="emailOpportunity">Digite seu e-mail*</label>
+                                <input type="email" name="emailOpportunity" id="emailOpportunity" maxlength="70" required>
+                            </div><!--input-block-->
+
+                            <div class="input-block">
+                                <label for="subjectOpportunity">Digite o nome do cargo que deseja* </label>
+                                <input type="email" name="subjectOpportunity" id="subjectOpportunity" placeholder="Informe o cargo que deseja atuar" required>
+                            </div><!--input-block-->
+
+                            <div class="input-block">
+                                <label for="instructionsOpportunity">Escreva uma mensagem* </label>
+                                <textarea id="instructionsOpportunity" name="instructionsOpportunity" required maxlength="450"></textarea>
+                            </div><!--input-block-->
+
+                            <div class="input-block">
+                                <label for="fileCurriculum">Clique aqui para enviar um arquivo*</label>
+                                <input class="hidden" type="file" name="fileCurriculum" id="fileCurriculum" required>
+                            </div><!--input-block-->
+
+
+                            <div class="input-block">
+                                <button class="btn" type="submit">Enviar</button>
+                            </div><!--input-block-->
+                        </fieldset>
+                    </form>
+                </div><!--fale-conosco-->
+            </section><!--visit-->
+        </div><!--center-->    
     </main>
 
-
+   
     <footer>
         <div class="center">
 
@@ -163,7 +174,10 @@
 
     </footer>
 
+
     <script src="https://kit.fontawesome.com/f4dd9ff78b.js" crossorigin="anonymous"></script>
     <script src="/public/js/scripts.js"></script>
+    <script src="/public/js/trabalhe.js"></script>
+    
 </body>
 </html>

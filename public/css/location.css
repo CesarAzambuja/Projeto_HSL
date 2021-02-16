@@ -1,0 +1,21 @@
+main.location{
+    width: 100%;
+    padding: 60px 0;
+    background: #00abee07;
+}
+
+section.visit{
+    display: flex;
+    justify-content: space-around;
+}
+
+#mapid{
+    width: 48%;
+    height: 650px;
+}
+
+a.target{
+    text-decoration: none;
+    color: #141414;
+}
+
