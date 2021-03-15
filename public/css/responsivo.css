@@ -1,4 +1,4 @@
-@media screen and (max-width: 918px){
+@media screen and (max-width: 1024px){
     .menu_desktop{
         display: none;
     }
@@ -14,10 +14,11 @@
     .icon{
         display: flex;
         justify-content: flex-end;
+        cursor: pointer;
     }
 
     .icon i{
-        color: #0c7f91;
+        color: var(--color);
         transform: scale(1.5);
         padding-right: 2%;
     }
@@ -79,6 +80,18 @@
     .input-block .hidden{
         width: 100%
     }
+
+    main.trabalhe-conosco .appear{
+        width: 100%;
+    }
+
+    .menu-search button{
+        margin: 0;
+    }
+
+    .professionals{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 650px){
@@ -107,4 +120,34 @@
         flex-direction: column;
         padding: 0 2%;
     }
+
 }
+
+@media screen and (max-width: 555px){
+    .professionals{
+        grid-template-columns: 1fr;
+    }
+
+    .professionals#ortopedistaEsp{
+        grid-template-columns: 1fr;
+    }
+
+    main.specialties .menu-search{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-search button span{
+        padding: 12px 0;
+    }
+
+    main.specialties h1{
+        text-align: center;
+    }
+
+    .menu-search button{
+        width: 70%;
+        height: auto;
+    }
+}
+

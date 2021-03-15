@@ -4,9 +4,26 @@ main.location{
     background: #00abee07;
 }
 
+section.professional-highlight{
+    display: flex;
+}
+
+section.professional-highlight h2{
+    margin: 0 auto;
+}
+
 section.visit{
     display: flex;
     justify-content: space-around;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.pointer span{
+    border-bottom: 1px solid var(--color);
+    padding: 2px 0;
 }
 
 #mapid{
@@ -14,8 +31,4 @@ section.visit{
     height: 650px;
 }
 
-a.target{
-    text-decoration: none;
-    color: #141414;
-}
 

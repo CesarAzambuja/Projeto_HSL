@@ -1,0 +1,101 @@
+main.specialties{
+    padding: 104px 0 208px 0;
+}
+
+main.specialties h1{
+    color: var(--color);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 14px 0 48px 0;
+}
+
+main.specialties .center{
+    max-width: 800px;
+    margin: auto;
+    padding: 0 2%;
+}
+
+
+main.specialties .menu-search{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.menu-search button{
+    height: 140px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    border: 1px solid #1414143b;
+    border-radius: 8px;
+    color: var(--color);
+    font-size: 16px;
+    background-color: white;
+    overflow: hidden;
+    opacity: 0.5;
+    transition: 600ms;
+}
+
+
+.menu-search button.selecionado{
+    opacity: 1;
+}
+
+.menu-search button img{
+    width: 100%;
+    height: 100%; 
+}
+
+
+.profession h2{
+    text-align: center;
+    padding: 24px 0;
+    color: var(--color);
+}
+
+.professionals{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.professionals#ortopedistaEsp{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 12px;
+}
+
+.professional-single{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 2%;
+    box-shadow: 1px 1px 1px #0c7f914f;
+    border-radius: 8px;
+    color: var(--color);
+}
+
+.professional-single p{
+    font-size: 14px;
+    margin: 8px 0;
+    font-weight: 700;
+}
+
+.professional-single span{
+    font-size: 12px;
+    margin: 4px 0;
+}
+
+.oculto{
+    display: none;
+}
