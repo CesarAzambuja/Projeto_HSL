@@ -1,14 +1,16 @@
 main.specialties{
-    padding: 104px 0 208px 0;
+    padding: 0 0 208px 0;
 }
 
 main.specialties h1{
     color: var(--color);
-    font-size: 18px;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 14px 0 48px 0;
+    padding: 4rem 0;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 main.specialties .center{
@@ -41,13 +43,13 @@ main.specialties .menu-search{
     font-size: 16px;
     background-color: white;
     overflow: hidden;
-    opacity: 0.5;
+    filter: opacity(1);
     transition: 600ms;
+    outline: transparent;
 }
 
-
 .menu-search button.selecionado{
-    opacity: 1;
+    filter: opacity(0.7);
 }
 
 .menu-search button img{
@@ -58,8 +60,9 @@ main.specialties .menu-search{
 
 .profession h2{
     text-align: center;
-    padding: 24px 0;
+    padding: 3rem 0;
     color: var(--color);
+    font-weight: 300;
 }
 
 .professionals{

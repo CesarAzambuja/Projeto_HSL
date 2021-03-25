@@ -1,8 +1,65 @@
 main.location{
     width: 100%;
     padding: 60px 0;
-    background: #00abee07;
+    background: #f2f2f2;
 }
+
+.content_about{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 3%;
+}
+
+.text_about{
+    Width:100%;
+    max-width: 600px;
+}
+
+.text_about p{
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2rem;
+    
+}
+
+.image_about{
+    padding: .4rem;
+}
+
+.image_about img{
+    width: 150%;
+    height: 100%;
+    box-shadow: .3rem .3rem 12px rgba(0,0,0,0.4);
+    
+}
+
+.missions{
+    padding: 4rem 0;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+}
+
+.mission{
+    
+    padding:4%;
+    border-width: 1px solid green;
+}
+
+.mission h3{
+    color: var(--color);
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.mission p{
+    width:70%;
+    line-height: 1.2rem;
+    
+}
+
 
 section.professional-highlight{
     display: flex;
@@ -31,4 +88,26 @@ section.visit{
     height: 650px;
 }
 
+@media screen and (max-width:1150px){
+    .content_about{
+        flex-direction: column;
+    }
 
+    .image_about img{
+        width:60%
+    }
+}
+
+@media screen and (max-width: 638px){
+    .image_about img{
+        width:80%
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .missions{
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+}

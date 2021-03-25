@@ -71,11 +71,14 @@
     background: var(--color);
     color: white;
     font-size: 20px;
-    transition: 600ms;
+    transition: 400ms;
     font-weight: 400;
+    border: 1px solid rgb(12,117,72);
+    box-shadow: .3rem .3rem 10px rgba(0, 0, 0, 0.3);
 }
 
 .btn:hover{
-    transition: 600px;
-    background: #0c7f91de;
+    transition: 400ms;
+    box-shadow: none;
+    filter: opacity(0.9);
 }

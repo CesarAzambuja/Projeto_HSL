@@ -6,30 +6,34 @@
     <meta name="description" content="hospital,são,lucas,maternidade,cuidados,saúde">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/public/css/style.css">
-    <link rel="stylesheet" href="/public/css/animation.css">
-    <link rel="stylesheet" href="/public/css/specialties.css">
-    <link rel="stylesheet" href="/public/css/responsivo.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu-topo-header.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/specialties.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/footer.css">
+
     <title>Hospital São Lucas</title>
 </head>
 <body>
     <section class="topo">
         <div class="center">
             <a href=""><i class="fas fa-phone-alt fone"></i>(13) 2102-5000</a>
-            <a href=""><i class="fab fa-facebook-square"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/saolucas.santos/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://instagram.com/saolucas.santos?igshid=1d5bp2h5s5msw" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/saolucas_santos?s=08" target="_blank"><i class="fab fa-twitter aquablue"></i></a>
         </div><!--center-->
     </section>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="../public/images/logotipo_oficial_sao_lucas.png" alt="Logo Oficial do Hospital"></a>
+            <a href="/"><img src="images/logotipo_oficial_sao_lucas.png" alt="Logo Oficial do Hospital"></a>
         </div>
         <div class="menu_desktop">
             <ul>
-                <li><a href="/views/localizacao.html" class="efeito_btn">O HOSPITAL</a></li>
-                <li><a href="/views/especialidade.html" class="efeito_btn">ESPECIALIDADES</a></li>
-                <li><a href="/views/planomater.html" class="efeito_btn">PLANOMATER</a></li>
-                <li><a href="/views/trabalhe-conosco.html" class="efeito_btn">TRABALHE CONOSCO</a></li>
+                <li><a href="/sobre" class="efeito_btn">O HOSPITAL</a></li>
+                <li><a href="/especialidades" class="efeito_btn">ESPECIALIDADES</a></li>
+                <li><a href="/mater" class="efeito_btn">PLANOMATER</a></li>
+                <li><a href="/trabalhe-conosco" class="efeito_btn">TRABALHE CONOSCO</a></li>
                 <li><a href="https://webmail-seguro.com.br/" class="efeito_btn">WEBMAIL</a></li>
             </ul>
         </div>
@@ -39,22 +43,22 @@
         
         <div class="menu_mobile">
             <ul>
-                <li><a href="/views/localizacao.html" >O HOSPITAL</a></li>
-                <li><a href="/views/especialidade.html" >ESPECIALIDADES</a></li>
-                <li><a href="/views/planomater.html" >PLANOMATER</a></li>
-                <li><a href="/views/trabalhe-conosco.html" >TRABALHE CONOSCO</a></li>
+                <li><a href="/sobre" >O HOSPITAL</a></li>
+                <li><a href="/especialidades" >ESPECIALIDADES</a></li>
+                <li><a href="/mater" >PLANOMATER</a></li>
+                <li><a href="/trabalhe-conosco" >TRABALHE CONOSCO</a></li>
                 <li><a href="https://webmail-seguro.com.br/">WEBMAIL</a></li>
             </ul>
         </div>
 
     </header>
     <section class="banner " id="slider">
-        <img  class="selected" src="/public/images/tarja (sao lucas).jpg">
-        <img src="/public/images/tarja (atendimento personalizado).jpg">
-        <img src="/public/images/tarja (covid).jpg">
-        <img src="/public/images/tarja (hemo).jpg">
-        <img src="/public/images/tarja 2 (ortopedia).jpg">
-        <img src="/public/images/tarja (parto humanizado).jpg">
+        <img  class="selected" src="images/tarja (sao lucas).jpg">
+        <img src="images/tarja (atendimento personalizado).jpg">
+        <img src="images/tarja (covid).jpg">
+        <img src="images/tarja (hemo).jpg">
+        <img src="images/tarja 2 (ortopedia).jpg">
+        <img src="images/tarja (parto humanizado).jpg">
         
     </section>
 
@@ -64,22 +68,22 @@
             <h1>Clique em uma ou mais opções para exibir os profissionais</h1>
         <nav class="menu-search">
             <button class="ortopediaT">
-                <img src="../public/images/ortoTrauma.jpg" alt="Ortopedia e Traumatologia" title="Ortopedia e Traumatologia">
+                <img src="images/ortoTrauma.jpg" alt="Ortopedia e Traumatologia" title="Ortopedia e Traumatologia">
                 <span> Ortopedia e Traumatologia</span>
             </button>
             
             <button class="ortopediaE">
-                <img src="../public/images/dor_costas.jpg" alt="Ortopedista Especialista" title="Ortopedista Especialista">
+                <img src="images/dor_costas.jpg" alt="Ortopedista Especialista" title="Ortopedista Especialista">
                 <span>Ortopedista Especialista</span>
             </button>
 
             <button class="especialidadeC">
-                <img src="../public/images/especialista_cdt.jpg" alt="Especialista no CDT" title="Especialista no CDT">
+                <img src="images/especialista_cdt.jpg" alt="Especialista no CDT" title="Especialista no CDT">
                 <span>Especialidades no CDT</span>
             </button>
 
             <button class="ginecologiaObs">
-                <img src="../public/images/ginecologia.jpg" alt="Ginecologia e Obstetricia" title="Ginecologia e Obstetricia">
+                <img src="images/ginecologia.jpg" alt="Ginecologia e Obstetricia" title="Ginecologia e Obstetricia">
                 <span>Ginecologia e Obstetricia</span>
             </button>
         </nav><!--menu-search-->
@@ -212,6 +216,21 @@
                         </div><!--professionals-->
                 </div><!--orto-->
 
+                <div id="ortoEsp" class="oculto">
+                    <h2>Ortopedista Especialista</h2>
+                        <div class="professionals" id="ortopedistaEsp">
+                            <div class="professional-single">
+                                <span>Especialista em coluna:</span>
+                                <p>Dr. German Vassilieff</p>
+                            </div>
+
+                            <div class="professional-single">
+                                <span>Especialista em ombro:</span>
+                                <p>Dr. Marcelo Koh Uezumi</p>
+                            </div>
+                        </div><!--professionals-->
+                </div><!--ortoEsp-->
+
                 <div id="cdt" class="oculto">
                     <h2>Especialidades no CDT</h2>
                         <div class="professionals" id="especialidadeCDT">
@@ -286,21 +305,6 @@
                             </div>
                         </div><!--professionals-->
                 </div><!--cdt-->
-
-                <div id="ortoEsp" class="oculto">
-                    <h2>Ortopedista Especialista</h2>
-                        <div class="professionals" id="ortopedistaEsp">
-                            <div class="professional-single">
-                                <span>Especialista em coluna:</span>
-                                <p>Dr. German Vassilieff</p>
-                            </div>
-
-                            <div class="professional-single">
-                                <span>Especialista em ombro:</span>
-                                <p>Dr. Marcelo Koh Uezumi</p>
-                            </div>
-                        </div><!--professionals-->
-                </div><!--ortoEsp-->
 
                 <div id="gineObs" class="oculto">
                     <h2>Ginecologia e Obstetricia</h2>
@@ -505,11 +509,11 @@
                 <div class="contact-us">
                     <p>Nos acompanhe nas redes sociais:</p>
                     <div class="social-media">
-                        <i class="fab fa-youtube red"></i>
-                        <i class="fab fa-linkedin-in blue-linkedin"></i>
-                        <i class="fab fa-twitter aquablue"></i>
-                        <i class="fab fa-facebook-f blue"></i>
-                        <i class="fab fa-instagram rose"></i>
+                        <a href="https://www.facebook.com/saolucas.santos/" target="_blank"><i class="fab fa-facebook-f blue"></i></a>
+                        <a href="https://instagram.com/saolucas.santos?igshid=1d5bp2h5s5msw" target="_blank"><i class="fab fa-instagram rose"></i></a>
+                        <a href="https://twitter.com/saolucas_santos?s=08" target="_blank"><i class="fab fa-twitter aquablue"></i></a>
+                        <!-- <i class="fab fa-youtube red"></i> -->
+                        <!-- <i class="fab fa-linkedin-in blue-linkedin"></i> -->
                     </div><!--social-media-->
                 </div><!--contact-us-->
             </section><!--contact-footer-->
@@ -550,7 +554,7 @@
                     <p>Estrutura Conceituada</p>
                     <p>Atendimento em Diversas Especialidades</p>
                     <p>Qualidade nos serviços prestados</p>
-                    <img src="/public/images/rodape_selo_3m.png" alt="">
+                    <img src="images/rodape_selo_3m.png" alt="">
                     <p class="doctor">Dr. Nicola Jorge Carneiro Neto <br>
                         Diretor Técnico <br>
                         CRM: 125.142 </p>
@@ -568,9 +572,9 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/f4dd9ff78b.js" crossorigin="anonymous"></script>
-    <script src="/public/js/banner.js"></script>
-    <script src="/public/js/scripts.js"></script>
-    <script src="/public/js/especialidade.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/especialidade.js"></script>
 
 </body>
 </html>

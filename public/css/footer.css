@@ -1,0 +1,175 @@
+footer{
+    width: 100%;
+    padding: 25px 2%;
+    background: #00bf8f; 
+    background: -webkit-linear-gradient(to left, #001510, #00bf8f);
+    background: linear-gradient(to left, #001510, #00bf8f);
+    color: white;
+}
+
+footer .center{
+    max-width: 1100px;
+}
+
+footer a{
+    text-decoration: none;
+    margin-left: 1px;
+    color: var(--color-footer-links);
+    font-weight: 700;
+}
+
+footer .copy{
+    width: 100%;
+    margin-top: 50px;
+    color: var(--color-footer-links);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .copy.dev{
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+footer .copy.dev a{
+    margin-left: 2px;
+}
+
+#btn_top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--background-btn-top);
+    color: white;
+    padding: 8px;
+
+    border-radius: 8px;
+    font-size: 30px;
+    transition: 600ms;
+    display: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.contact-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 50px;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us p{
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.headset{
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.headset i{
+    font-size: 24px;
+}
+
+.headset span{
+    margin-left: 8px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: initial;
+    gap: 40px;
+    padding: 8px 0;
+}
+
+.social-media i{
+    font-size: 28px;
+    cursor: pointer;
+    transition: 600ms;
+}
+
+.social-media .red:hover{
+    color: #c4302b;
+    transition: 600ms;
+    transform: scale(1.1, 1.1);
+}
+
+.social-media .blue-linkedin:hover{
+    color: #4bbef3fd;
+    transition: 600ms;
+    transform: scale(1.1, 1.1);
+}
+
+.social-media .aquablue:hover{
+    color: #00acee;
+    transition: 600ms;
+    transform: scale(1.1, 1.1);
+}
+
+.social-media .blue:hover{
+    color: #3b5998;
+    transition: 600ms;
+    transform: scale(1.1, 1.1);
+}
+
+.social-media .rose:hover{
+    color: #ffcbdb;
+    transition: 600ms;
+    transform: scale(1.1, 1.1);
+}
+
+.general-services{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.general-services .our-services{
+    display: flex;
+    flex-direction: column;
+}
+
+.general-services .our-services img{
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 100px;
+}
+
+.general-services .our-services p.doctor{
+    font-size: 10px;
+    color: #cccc;
+    line-height: 10px;
+    text-align: center;
+}
+
+
+.general-services .our-services h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.general-services .our-services p{
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.footer-developer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
