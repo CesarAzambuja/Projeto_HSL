@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/responsivo.css">
     <link rel="stylesheet" href="css/mater.css">
     <link rel="stylesheet" href="css/footer.css">
-
+    <link rel="shortcut icon" href="images/favicon.png">
     <title>Hospital São Lucas | Plano Mater</title>
 </head>
 <body>
@@ -23,33 +23,36 @@
         <div class="logo_mater">
             <a href="/" class="img_pm"><img src="images/PlanoMater PNG Logo.png" alt="Logo Oficial do Hospital"></a>
             <a href="/" class="img_sl"><img src="images/logotipo_oficial_sao_lucas.png" alt="Logo Oficial do Hospital"></a>
+            <a href="/" class="btn btn-primary"><i class="fas fa-home"></i></a>
         </div>
     </header>
 
+
+    
     <main class="planomater">
-        <h1>Entre em contato para maiores informações</h1>
+            <h1>Entre em contato para maiores informações </h1>
+            
         <div class="contato-wrapper">
             <div class="contato-left">
-                <img src="images/card_mater.jpeg" alt="">
+                <img src="images/card_mater.jpg" alt="">
             </div><!--contato-left-->
             <div class="contato-right">
                 <h1>Contato</h1>
-                <form onsubmit="FormMater.submit(event)">
+                <form onsubmit="FormMater.submit(event)" autocomplete="off">
                     <div class="input-group">
-                        <input type="text" class="field" id="nomeMater" name="nomeMater" autocomplete="off" required >
+                        <input type="text" class="field" id="nomeMater" name="nomeMater" required autocomplete="off" />
                         <label for="nomeMater" class="field-label">Nome</label>
                     </div>
                     <div class="input-group">
-                        <input type="email" class="field" id="emailMater" name="emailMater" autocomplete="off" required >
+                        <input type="email" class="field" id="emailMater" name="emailMater" required autocomplete="off" />
                         <label for="emailMater" class="field-label">Seu E-mail</label>
                     </div>
                     <div class="input-group">
-                        <textarea class="field" id="mensagemMater" name="mensagemMater" autocomplete="off" required></textarea>
+                        <textarea class="field" id="mensagemMater" name="mensagemMater" required autocomplete="off" ></textarea>
                         <label for="mensagemMater" class="field-label">Mensagem</label>
                     </div>
                     <div class="card-button">
                         <button type="submit" class="button btn">Enviar</button>
-                        <a href="/" class="btn btn-primary">Voltar</a>
                     </div>
                 
                 </form>
@@ -120,7 +123,12 @@
                     <img src="images/rodape_selo_3m.png" alt="">
                     <p class="doctor">Dr. Nicola Jorge Carneiro Neto <br>
                         Diretor Técnico <br>
-                        CRM: 125.142 </p>
+                        CRM: 125.142
+                    </p>
+                    <p class="doctor">Dr. Marco Carvalho<br>
+                        Diretor Clínico <br>
+                        CRM: 63.305
+                    </p>
                 </div><!--our-services-->
             </section><!--general-services-->
 

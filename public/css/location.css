@@ -6,6 +6,8 @@ main.location{
 
 .content_about{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 50px;
     margin-bottom: 3%;
 }
@@ -24,11 +26,13 @@ main.location{
 }
 
 .image_about{
+    width: 100%;
+    height: 100%;
     padding: .4rem;
 }
 
 .image_about img{
-    width: 150%;
+    width: 100%;
     height: 100%;
     box-shadow: .3rem .3rem 12px rgba(0,0,0,0.4);
     
@@ -74,6 +78,11 @@ section.visit{
     justify-content: space-around;
 }
 
+.fieldset-left{
+    display: flex;
+    align-items:flex-start !important;
+}
+
 .pointer{
     cursor: pointer;
 }
@@ -85,20 +94,31 @@ section.visit{
 
 #mapid{
     width: 48%;
-    height: 650px;
+    /*height: 650px;*/
 }
 
 @media screen and (max-width:1150px){
     .content_about{
         flex-direction: column;
+        
+    }
+
+    .image_about{
+        display: flex;
+        align-items: center;
+        justify-content:center;
     }
 
     .image_about img{
-        width:60%
+        width:50%
+
     }
 }
 
 @media screen and (max-width: 638px){
+    .content_about{
+        padding: 0 3%;
+    }
     .image_about img{
         width:80%
     }

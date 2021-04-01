@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/responsivo.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="images/favicon.png">
     <title>Hospital São Lucas</title>
 </head>
 <body>
@@ -51,49 +52,149 @@
 
     </header>
     <section class="banner " id="slider">
-        <img  class="selected" src="images/tarja (sao lucas).jpg">
+        <img  class="selected" src="images/tarja (sao lucas).jpeg">
         <img src="images/tarja (atendimento personalizado).jpg">
-        <img src="images/tarja (covid).jpg">
+        <img src="images/tarja (covid).jpeg">
         <img src="images/tarja (hemo).jpg">
         <img src="images/tarja 2 (ortopedia).jpg">
-        <img src="images/tarja (parto humanizado).jpg">
+        <img src="images/tarja (parto humanizado).jpeg">
         
     </section>
-
+    
     <main>
         <!-- conteúdo principal semântico aqui -->
         <section class="cards_services">
-            <h1 class="conteSaoLucas">CONHEÇA O SÃO LUCAS</h1>
-            <div class="cards">
-                <div class="card">
-                    <h1>Pronto Atendimento 24H</h1>
-                    <div class="card_image">
-                        <img src="images/teste_card.jpeg" alt="">
-                        <div class="card_text"><p>Nossa equipe especializada em emergência disponível 24h</p></div>
-                    </div><!--card_image-->
-                </div><!--card-->
-                <div class="card">
-                    <h1>Centro Obstétrico e Ginecológico</h1>
-                    <div class="card_image">
-                        <img src="images/ginecologia.jpg" alt="">
-                        <div class="card_text"><p>Infraestrutura e equipe preparada para acompanhar sua gestação e parto</p></div>
-                    </div><!--card_image-->
-                </div><!--card-->
-                <div class="card">
-                    <h1>Ortopedia e Traumatologia</h1>
-                    <div class="card_image">
-                        <img src="images/dor_costas.jpg" alt="">
-                        <div class="card_text"><p>Atendimento especializado em ortopedia e traumatologia</p></div>
-                    </div><!--card_image-->
-                </div><!--card-->
-            </div><!--cards-->
+            <div class="container">
 
+                <h1 class="conteSaoLucas">CONHEÇA O SÃO LUCAS</h1>
+                <div class="cards">
+                    <div class="card">
+                        <h1>Pronto Atendimento 24H</h1>
+                        <div class="card_image">
+                            <img src="images/teste_card.jpeg" alt="">
+                            <div class="card_text"><p>Nossa equipe especializada em emergência disponível 24h</p></div>
+                        </div><!--card_image-->
+                    </div><!--card-->
+                    <div class="card">
+                        <h1>Obstétria e Ginecológia</h1>
+                        <div class="card_image">
+                            <img src="images/ginecologia.jpeg" alt="">
+                            <div class="card_text"><p>Infraestrutura e equipe preparada para acompanhar sua gestação e parto</p></div>
+                        </div><!--card_image-->
+                    </div><!--card-->
+                    <div class="card">
+                        <h1>Ortopedia e Traumatologia</h1>
+                        <div class="card_image">
+                            <img src="images/dor_costas.jpeg" alt="">
+                            <div class="card_text"><p>Atendimento especializado em ortopedia e traumatologia</p></div>
+                        </div><!--card_image-->
+                    </div><!--card-->
+                </div><!--cards-->
+
+            </div><!--container-->
         </section>
+
+        <section class="information">
+            <div class="container">
+
+                <h1  class="conteSaoLucas">Você pode se interessar por</h1>
+                    <div class="wrapper-information">
+                    <div class="card-information">
+                        <div class="wrapper-img-information">
+                            <img src="images/saiba-mais.jpg" alt="Sobre">
+                            <div class="foto-legenda">
+                                <img src="images/foto_legenda_bg.png" alt="">
+                                <p>O nosso São Lucas</p>
+                            </div>
+                        </div><!--wrapper-img-information-->
+                        <p class="text-information">
+                            Sobre um dos mais importantes hospitais da região.
+                        </p>
+                        <a href="/sobre" class="btn btn-information">>>> Leia mais!</a>
+                    </div><!--card-information-->
+
+                    <div class="card-information">
+                        <div class="wrapper-img-information">
+                            <img src="images/pronto-atendimento.jpg" alt="pronto atendimento">
+                            <div class="foto-legenda">
+                                <img src="images/foto_legenda_bg.png" alt="">
+                                <p>Pronto atendimento</p>
+                            </div>
+                        </div><!--wrapper-img-information-->
+                        <p class="text-information">
+                            Com equipe especialista em emergências em todo momento.
+                        </p>
+                        <button onclick="prontoAtendimento()" class="btn btn-information">>>> Leia mais!</button>
+                    </div><!--card-information-->
+
+                    <div class="card-information">
+                        <div class="wrapper-img-information">
+                            <img src="images/maternidade.jpg" alt="Maternidade">
+                            <div class="foto-legenda">
+                                <img src="images/foto_legenda_bg.png" alt="">
+                                <p>Maternidade</p>
+                            </div>
+                        </div><!--wrapper-img-information-->
+                        
+                        <p class="text-information">
+                            Um momento de delicadeza que requer todo o cuidado, carinho e atenção.
+                        </p>
+                        <button onclick="maternidade()" class="btn btn-information">>>> Leia mais!</button>
+                    </div><!--card-information-->
+
+                    <div class="card-information">
+                        <div class="wrapper-img-information">
+                            <img src="images/visitantes.jpg" alt="Visitante">
+                            <div class="foto-legenda">
+                                <img src="images/foto_legenda_bg.png" alt="">
+                                <p>Visitantes</p>
+                            </div>
+                        </div><!--wrapper-img-information-->
+                        
+                        <p class="text-information">
+                            Informe-se sobre alguns procedimentos básicos adotados para assegurar o bem-estar do paciente.
+                        </p>
+                        <button onclick="visitante()" class="btn btn-information">>>> Leia mais!</button>
+                    </div><!--card-information-->
+
+                    <div class="card-information">
+                        <div class="wrapper-img-information">
+                            <img src="images/rotinas.jpg" alt="Rotinas de internação">
+                            <div class="foto-legenda">
+                                <img src="images/foto_legenda_bg.png" alt="">
+                                <p>Rotinas de internação</p>
+                            </div>
+                        </div><!--wrapper-img-information-->
+                        
+                        <p class="text-information">
+                            Saiba mais sobre os procedimentos do Hospital.
+                        </p>
+                        <button onclick="rotinaInternacao()" class="btn btn-information">>>> Leia mais!</button>
+                    </div><!--card-information-->
+
+                    <div class="card-information">
+                        <div class="wrapper-img-information">
+                            <img src="images/covid.jpeg" alt="Comunicado Covid">
+                            <div class="foto-legenda">
+                                <img src="images/foto_legenda_bg.png" alt="">
+                                <p>Comunicados Covid</p>
+                            </div>
+                        </div><!--wrapper-img-information-->
+                        
+                        <p class="text-information">
+                            Saiba mais sobre os procedimentos do Hospital com relação a COVID-19.
+                        </p>
+                        <a href="/images/comunicado-covid.pdf" target="_blank" class="btn btn-information">>>> Leia mais!</a>
+                    </div><!--card-information-->
+
+                </div><!--wrapper-information-->
+            </div><!--container-->
+        </section><!--information-->
 
         <section class="planos">
             <div class="header-planos">
                 <h1 class="conteSaoLucas">Planos de saúde</h1>
-                <p>Entre em contato e verifique a cobertura de seu plano de saúde!</p>
+                <p>Entre em contato com equipe de atendimento para verificar a listagem atualizada e a corbetura do seu plano de saúde!</p>
             </div>
             <div class="wrapper">
             
@@ -157,6 +258,12 @@
                 </div>
             </div>
         </section>
+
+        <div class="modal">
+            <div class="modal-overlay">
+                
+            </div><!--modal-overlay-->
+        </div><!--modal-->
     </main>
 
 
@@ -222,7 +329,13 @@
                     <img src="images/rodape_selo_3m.png" alt="">
                     <p class="doctor">Dr. Nicola Jorge Carneiro Neto <br>
                         Diretor Técnico <br>
-                        CRM: 125.142 </p>
+                        CRM: 125.142
+                    </p>
+                    <p class="doctor">Dr. Marco Carvalho<br>
+                        Diretor Clínico <br>
+                        CRM: 63.305
+                    </p>
+
                 </div><!--our-services-->
             </section><!--general-services-->
 
@@ -236,6 +349,7 @@
 
     </footer>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://kit.fontawesome.com/f4dd9ff78b.js" crossorigin="anonymous"></script>
     <script src="js/banner.js"></script>
     <script src="js/scripts.js"></script>

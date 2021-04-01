@@ -63,22 +63,3 @@
     margin-top: 24px;
 }
 
-.btn{
-    padding: 16px;
-    cursor: pointer;
-    border: 0;
-    border-radius: 8px;
-    background: var(--color);
-    color: white;
-    font-size: 20px;
-    transition: 400ms;
-    font-weight: 400;
-    border: 1px solid rgb(12,117,72);
-    box-shadow: .3rem .3rem 10px rgba(0, 0, 0, 0.3);
-}
-
-.btn:hover{
-    transition: 400ms;
-    box-shadow: none;
-    filter: opacity(0.9);
-}

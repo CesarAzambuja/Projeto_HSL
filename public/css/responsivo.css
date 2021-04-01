@@ -44,11 +44,14 @@
         background-repeat: no-repeat;
     }
 
-    .cards{
+    .cards, .wrapper-information{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content:center;
+        margin: 0;
+        padding: 0 2%;
+        margin: 0 auto;
     }
 
     .banner{
@@ -107,6 +110,14 @@
 }
 
 @media screen and (max-width: 650px){
+    .cards, .wrapper-information{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
     .wrapper{
         grid-template-columns: 1fr 1fr;
     }
@@ -172,6 +183,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    footer .copy{
+        font-size: 12px;
     }
 }
 

@@ -45,7 +45,7 @@ header{
 
 .contato-wrapper{
     background: linear-gradient(rgba(130, 224, 177, 0.2), rgba(67, 218, 67, 0.418));
-    max-width: 60%;
+    max-width: 100%;
     display: flex;
     box-shadow: 0 2rem 3rem  rgba(0,0,0,0.5);
 }
@@ -58,6 +58,7 @@ header{
     width: 100%;
     height: 100%;
     opacity: .6;
+    object-fit:auto;
 }
 
 .contato-right{
